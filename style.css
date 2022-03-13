@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+body{
+    background-color: black;
+    color:whitesmoke;
+    font-family: 'VT323', monospace;
+    font-size: 6rem;
+}
+
+.main-nav{
+    width: 80%;
+    max-width: 1600px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.unselectabe{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;      
+}
+
+section{
+    display: none;
+}
+
+section:target{
+    display: block;
+}
+
+
+/* about */
+section{
+    width: 80%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+main{
+    margin-top: 128px;
+}
+
+#about .info-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/*works*/
+
+.work-block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.img {
+    border: 6px dashed whitesmoke;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.img-small {
+    width: 64px;
+    height: 64px;
+}
+
+.img-medium{
+    width: 128px;
+    height: 128px;
+}
+
+.img-big{
+    width: 256px;
+    height: 256px;
+}
+
+.text-description{
+    padding-top: 32px;
+    font-size: 2rem;
+}
+
+.img-hover:hover{
+    position: relative;
+    width: 800px;
+    height: 600px;
+}
+
+.img-hover-vertical:hover{
+    position: relative;
+    width: 600px;
+    height: 800px;
+}
+
+
+
+
+
+
+
+/*games*/
+
+
+.text{
+    font-size: 3rem;
+}
+
+.hide{
+    display: none;
+}
+
+/*footer*/
+.main-footer{
+
+    margin-top: 140px;
+}
+
+
+.footer-left{
+    width: 80%;
+    max-width: 1600px;
+    margin: auto;
+    
+}
+
+.text-footer{
+    font-size: 2rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.text-footer:hover{
+    color:greenyellow;
+}
+
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*scorllbar*/
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    background-color: black;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+  }
+
+

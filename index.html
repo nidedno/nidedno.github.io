@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Tolstov Avdey">
+        <meta name="nickname" content="nidedno">
+        <meta name="description" content="Страница портфолио, для отображения моих результатов в работе">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>portfolio</title>
+        <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="style.css">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+
+    
+
+    </head>
+
+
+
+    <body>
+
+        <header class="main-header">
+            <nav class="main-nav unselectabe">
+                <a href="#about" onclick="AddActive(event)">about</a>
+                <a href="#works" onclick="AddActive(event)">works</a>
+                <a href="#games" onclick="AddActive(event)">games</a>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <section id="about">
+                <div class="info-block unselectabe">
+                    <p>Who am i?</p>
+                    <p class="text">
+                        Hello, my name is Avdey. At this moment i am studying at 3rd course. Now i working at my games
+                        and in close future wanna be a cool game developer.
+                    </p>
+                </div>
+
+                <div class="info-block unselectabe">
+                    <p>What i like?</p>
+                    <p class="text">
+                        I like making games, studying, play on guitar and also have a experience in photoshop.
+                    </p>
+                </div>
+            </section>
+
+
+            
+            <section id="works">
+
+                <div class="work-block">
+                    
+                    <p class="text">Photoshop</p>
+                    <img class="img img-big img-hover" src="images/works/ps_first.jpg">
+                    <img class="img img-big img-hover" src="images/works/ps_two.jpg">
+                    <img class="img img-big img-hover" src="images/works/ps_three.jpg">
+                    <img class="img img-big img-hover-vertical" src="images/works/ps_4.jpg">
+                    <img class="img img-big img-hover-vertical" src="images/works/ps_five.jpg">
+
+                    <p class="text-description">
+                        I have experience in Photoshop, as I am a member of the information committee of the institute as a designer
+                    </p>
+
+                </div>
+
+
+            </section>
+
+            
+            <section id="games">
+
+            </section>
+
+
+        </main>
+
+
+
+        <footer class="main-footer">
+            <div class="footer-left">
+                <div class="footer-content unselectabe">
+                    <a href="https://github.com/AppleHex" target="_blank" class="text-footer"> <i></i> GitHub </a>
+                    <a href="https://t.me/nidedno" class="text-footer" target="_blank"> <i></i> Telegram </a>
+                    <a href="https://vk.com/h4kor" class="text-footer" target="_blank"> <i></i> VK </a>
+                </div>               
+            </div>
+        </footer>
+
+
+
+
+        <script type="text/javascript">
+            if (document.location.hash == "" || document.location.hash == "#")
+            {
+                document.location.hash = "#about";
+
+            }
+              
+        </script>
+        <script type="text/javascript">
+            if(performance.navigation.type == performance.navigation.TYPE_RELOAD)
+            {
+                document.location.hash = "#about";
+                document.querySelector('.main-nav > a:nth-child(1)').style.color = "greenyellow";
+            }
+        </script>
+        <script type="text/javascript">
+            function AddActive(event)
+            {
+                let target = event.target;
+                let a_elements = document.querySelectorAll('.main-nav > a');
+                
+                for (let a of a_elements) {
+                    a.style.color = "whitesmoke";
+                }
+
+                target.style.color = "greenyellow";
+            }
+        </script>
+
+
+
+        
+    </body>
+
+
+</html>
