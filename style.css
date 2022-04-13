@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navigation-title-size: 4rem;
+    --text-size: 2.7rem;
+    --title-size: 3.2rem;
+    --text-description: 2.2rem;
+}
+
+
+body{
+    background-color: black;
+    color:whitesmoke;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+}
+
+.main-nav{
+    width: 80%;
+    max-width: 1600px;
+
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.main-nav a{
+    font-size: var(--navigation-title-size);
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+.unselectabe{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;      
+}
+
+section{
+    display: none;
+}
+
+section:target{
+    display: block;
+}
+
+
+/* about */
+
+h1{
+    font-size: var(--title-size);
+    margin-bottom: 15px;
+}
+
+section{
+    width: 80%;
+    max-width: 1600px;
+    margin: auto;
+}
+
+main{
+    margin-top: 128px;
+    min-height: calc(100vh - 420px);
+}
+
+#about .info-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+/*works*/
+
+.work-block
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 100%;
+}
+
+.photoshop
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img {
+    border: 6px dashed whitesmoke;
+    margin: 0px 15px;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.img-small {
+    width: 64px;
+    height: 64px;
+}
+
+.img-medium{
+    width: 128px;
+    height: 128px;
+}
+
+.img-big{
+    width: 256px;
+    height: 256px;
+}
+
+.text-description{
+    padding-top: 32px;
+    font-size: 2rem;
+}
+
+.img-hover:active{
+    position: absolute;
+    width: 800px;
+    height: 600px;
+}
+
+.img-hover-vertical:active{
+    position: absolute;
+    width: 600px;
+    height: 800px;
+}
+
+
+
+
+
+
+
+/*games*/
+
+
+
+.status-finish {
+    color:yellowgreen;
+}
+
+.status-abadoned{
+    color:brown;
+}
+
+.status-in_work{
+    color: #fdd878;
+}
+
+.game-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.game-info{
+    width: 70%;
+}
+
+.button{
+    border: 4px dashed whitesmoke;
+    padding: 10px 15px;
+
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.button:hover{
+    background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+}
+
+.text{
+    font-size: var(--text-size);
+}
+
+.hide{
+    display: none;
+}
+
+/*footer*/
+.main-footer{
+   /* position: fixed;*/
+
+    width: 100%;
+    margin-top: 140px;
+    min-height: 70px;
+}
+
+
+.footer-left{
+    width: 80%;
+    max-width: 1600px;
+    margin: auto;
+    
+}
+
+.text-footer{
+    font-size: var(--text-description);
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.text-footer:hover{
+    color:greenyellow;
+}
+
+
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/*scorllbar*/
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    background-color: black;
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: whitesmoke;
+  }
+
+

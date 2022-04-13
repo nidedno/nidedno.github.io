@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Tolstov Avdey">
+        <meta name="nickname" content="nidedno">
+        <meta name="description" content="Страница портфолио, для отображения моих результатов в работе">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>portfolio</title>
+        <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+
+        <link rel="stylesheet" href="style.css">
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+
+
+    
+
+    </head>
+
+
+
+    <body>
+
+        <header class="main-header">
+            <nav class="main-nav unselectabe">
+                <a href="#about" onclick="AddActive(event)">about</a>
+                <a href="#works" onclick="AddActive(event)">works</a>
+                <a href="#games" onclick="AddActive(event)">games</a>
+            </nav>
+        </header>
+
+
+        <main>
+
+            <section id="about">
+                <div class="info-block unselectabe">
+                    <h1>Who am i?</h1>
+                    <p class="text">
+                        Hello, my name is Avdey. At this moment i am studying at 3rd course. Now i working at my games
+                        and in close future wanna be a cool game developer.
+                    </p>
+                </div>
+
+                <div class="info-block unselectabe">
+                    <h1>What i like?</h1>
+                    <p class="text">
+                        I like making games, studying, play on guitar and also have a experience in photoshop.
+                    </p>
+                </div>
+            </section>
+
+
+            
+            <section id="works">
+
+                <div class="work-block">
+                    
+                    <h1 class="text">Photoshop</h1>
+                    <div class="photoshop">
+                        <img class="img img-big img-hover" src="images/works/ps_first.jpg">
+                        <img class="img img-big img-hover" src="images/works/ps_two.jpg">
+                        <img class="img img-big img-hover" src="images/works/ps_three.jpg">
+                        <img class="img img-big img-hover-vertical" src="images/works/ps_4.jpg">
+                        <img class="img img-big img-hover-vertical" src="images/works/ps_five.jpg">
+                    </div>
+
+                    <p class="text-description">
+                        I have experience in Photoshop, as I am a member of the information committee of the institute as a designer
+                    </p>
+
+                </div>
+
+                <div class="work-block">
+                    <h1 class="text">Music</h1>
+                    <p class="text-description">
+                        I create music both on the guitar and in one simple program - bosco ceoil
+                    </p>
+                </div>
+
+                <div class="work-block">
+                    <h1 class="text">Programming</h1>
+                    <p class="text-description">
+                        I met programming in game called garrys mod. To work this game using language called lua.<br>
+                        After that I started learning more languages like c++, c#, python.<br>
+                        In future I wanna create my own company and make the game which can<br>
+                        revolutionize the gaming industry :)
+
+                    </p>
+                </div>
+
+
+            </section>
+
+            
+            <section id="games">
+
+                <div class="game-block">
+                    <img class="img img-big" src="images/games/game_first.jpg">
+                    <div class="game-info">
+                        <h1 >Gravity</h1>
+                        <p class="text-description">This is a game where you have to change your gravity to pass various obstacles.</p>
+                        <p class="text-description">status: <span class="status-finish text-description">finished</span> </p>
+                        <p class="text-description">  <a class="button" href="https://github.com/nidedno/Gravity/tree/master">MORE INFO</a> </p>
+                    </div>
+                </div>
+
+                
+                <div class="game-block">
+                    <img class="img img-big" src="images/question.png">
+                    <div class="game-info">
+
+                        <h1 >Lick it</h1>
+
+                        <p class="text-description">In this game you have to play as a frog and use your tongue to solve various <br>
+                            puzzles while eating everything in your path</p>
+                        <p class="text-description">The reason for not being able to finish this game is the lack of time to draw <br>
+                            textures, music and so on. I will finish it in the future</p>
+                        <p class="text-description">status: <span class="status-abadoned text-description">stoped</span> </p>
+
+                        <p class="text-description">  <a class="button" href="#">MORE INFO</a> </p>
+
+                    </div>
+                </div>
+
+
+                <div class="game-block">
+                    <img class="img img-big" src="images/games/game_first.jpg">
+                    <div class="game-info">
+
+                        <h1 >Whak em</h1>
+                        
+                        <p class="text-description">This game where you need to punch a skeletons</p>
+                        <p class="text-description">status: <span class="status-in_work text-description">in progress</span> </p>
+                        <p class="text-description">  <a class="button" href="https://github.com/nidedno/Whak-em/tree/master">MORE INFO</a> </p>
+                    </div>
+                </div>
+
+                
+                <div class="game-block">
+                    <img class="img img-big" src="images/question.png">
+                    <div class="game-info">
+
+                        <h1 >Clone factory</h1>
+
+                        <p class="text-description">This is a game in which you play as a clone. Each death of a clone allows you<br>
+                             to overcome certain traps. How far can you go...</p>
+                        <p class="text-description">status: <span class="status-in_work text-description">in progress</span> </p>
+                        <p class="text-description">  <a class="button" href="#">MORE INFO</a> </p>
+                    </div>
+                </div>
+
+                <div class="game-block">
+                    <img class="img img-big" src="images/question.png">
+                    <div class="game-info">
+                        <h1 >???</h1>
+                        <p class="text-description">This is a 3d shooter where we use 2d graphic</p>
+                        <p class="text-description">status: <span class="status-in_work text-description">idea</span> </p>
+                        <p class="text-description">  <a class="button" href="#">???</a> </p>
+                    </div>
+                </div>
+
+
+
+            </section>
+
+
+        </main>
+
+
+
+        <footer class="main-footer">
+            <div class="footer-left">
+                <div class="footer-content unselectabe">
+                    <a href="https://github.com/AppleHex" target="_blank" class="text-footer"> <i></i> GitHub </a>
+                    <a href="https://t.me/nidedno" class="text-footer" target="_blank"> <i></i> Telegram </a>
+                    <a href="https://vk.com/h4kor" class="text-footer" target="_blank"> <i></i> VK </a>
+                </div>               
+            </div>
+        </footer>
+
+
+
+
+
+        <script src="js/page_check.js"></script>
+        <script src="js/functions.js"></script>
+    </body>
+
+
+</html>
