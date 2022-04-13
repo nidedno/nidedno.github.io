@@ -11,11 +11,13 @@
 }
 
 
+
 body{
     background-color: black;
     color:whitesmoke;
     font-family: 'Ubuntu', sans-serif;
     font-size: 2.5rem;
+
 }
 
 .main-nav{
@@ -30,7 +32,9 @@ body{
 }
 
 .main-nav a{
+
     font-size: var(--navigation-title-size);
+
     text-decoration: none;
     color: inherit;
 }
@@ -55,6 +59,7 @@ section:target{
 
 /* about */
 
+
 h1{
     font-size: var(--title-size);
     margin-bottom: 15px;
@@ -69,6 +74,7 @@ section{
 main{
     margin-top: 128px;
     min-height: calc(100vh - 420px);
+
 }
 
 #about .info-block{
@@ -92,8 +98,6 @@ main{
 
     margin-top: 70px;
     margin-bottom: 70px;
-    width: 100%;
-}
 
 .photoshop
 {
@@ -101,6 +105,7 @@ main{
     width: 100%;
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .img {
@@ -130,14 +135,17 @@ main{
     font-size: 2rem;
 }
 
+
 .img-hover:active{
     position: absolute;
     width: 800px;
     height: 600px;
 }
 
+
 .img-hover-vertical:active{
     position: absolute;
+
     width: 600px;
     height: 800px;
 }
@@ -200,11 +208,11 @@ main{
 
 /*footer*/
 .main-footer{
-   /* position: fixed;*/
 
     width: 100%;
     margin-top: 140px;
     min-height: 70px;
+
 }
 
 
@@ -215,8 +223,10 @@ main{
     
 }
 
-.text-footer{
+.text-footer
+{
     font-size: var(--text-description);
+
     text-decoration: none;
     color: whitesmoke;
 }
